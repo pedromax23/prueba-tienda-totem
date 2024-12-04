@@ -1,0 +1,43 @@
+header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0;
+    gap: 10px;
+}
+
+.menu {
+    margin: auto;
+    padding: 10px 0;
+}
+
+.menu_list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: center;
+    gap: 20px;
+    height: 100%;
+}
+
+.menu_list_item {
+    text-align: center;
+    width: clamp(100px, 300px, 150px);
+}
+
+.menu-link {
+    color: rgb(204, 207, 254);
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgb(63, 99, 101);
+    display: block;
+
+}
+
+@media screen and (min-width: 500px) {
+    .menu_list {
+        flex-direction: row;
+    }
+}
